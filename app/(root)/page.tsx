@@ -1,5 +1,5 @@
 const Home = () => {
-  return <>Prostore</>
+  return <>Home Page</>
 }
 
 export default Home
