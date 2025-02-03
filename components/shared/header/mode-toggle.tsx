@@ -11,7 +11,7 @@ import {
   DropdownMenuCheckboxItem,
 } from '@/components/ui/dropdown-menu'
 import { Button } from '@/components/ui/button'
-import { SunIcon, MoonIcon, SunMoonIcon, Sun } from 'lucide-react'
+import { SunIcon, MoonIcon, SunMoonIcon } from 'lucide-react'
 import { useTheme } from 'next-themes'
 
 const ModeToggle = () => {

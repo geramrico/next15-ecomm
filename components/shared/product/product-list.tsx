@@ -1,4 +1,3 @@
-import path from 'path'
 import ProductCard from './product-card'
 import { Product } from '@/types'
 
