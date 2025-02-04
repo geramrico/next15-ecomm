@@ -23,9 +23,13 @@ const SignInPage = async (props: {
     callbakUrl: string
   }>
 }) => {
+  //callback url
   const { callbakUrl } = await props.searchParams
+
+  //check if session exists
   const session = await auth()
 
+  //if session exists, go to homepage, no need to go to signin
   if (session) {
     return redirect(callbakUrl || '/')
   }
