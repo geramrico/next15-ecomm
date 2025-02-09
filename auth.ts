@@ -21,7 +21,7 @@ export const config = {
         email: { type: 'email' },
         password: { type: 'password' },
       },
-      async authorize(credentials) {
+      async authorize(credentials, _req) {
         if (credentials == null) return null
 
         //find user in database
@@ -42,7 +42,7 @@ export const config = {
               name: user.name,
               email: user.email,
               role: user.role,
-            }
+            } as any //added to fix authorize TS error. Not sure if best
           }
           // if user doesnt exists or PW doesnt match, return null
           return null

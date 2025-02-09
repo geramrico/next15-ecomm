@@ -1,4 +1,3 @@
-import { signInWithCredentials } from '@/lib/actions/user.actions'
 import { Metadata } from 'next'
 import {
   Card,
